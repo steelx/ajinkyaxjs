@@ -1,0 +1,81 @@
+@import url("normalize.min.css");
+
+.wrapper {
+    width: 900px;
+    margin: 50px auto;
+    padding: 15px;
+    background-color: #ecf0f5;
+    color: #34495e;
+    position: relative;
+}
+.wrapper ul {
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /*-moz-columns: 3 260px;*/
+    /*-webkit-columns: 3 260px;*/
+    /*columns: 3 260px;*/
+}
+.wrapper ul li {
+    width: 260px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.wrapper ul li > p {
+    margin: 0 5px 0 0;    
+    text-decoration: underline;
+    cursor: pointer;
+}
+.wrapper ul li > span {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    background-color: #1da9cc;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 13px;
+}
+.wrapper ul li > span p {
+    margin: 0;
+}
+
+.wrapper ul li p,
+.wrapper ul li > p > b {
+    display: block;
+    float: left;
+}
+.wrapper ul li > p,
+.wrapper ul li > p > b {
+    font-size: 15px;
+    line-height: 20px;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}

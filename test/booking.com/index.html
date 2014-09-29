@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="ajinkya">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Ajinkya Borade +91-9833340250</title>
+        <meta name="description" content="Frontend web developer ajinkyab1987@gmail.com">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--[if lt IE 9]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <p style="text-align:center;">Ajinkya Borade :: Frontend web developer ==> ajinkyab1987@gmail.com</p>
+
+
+        <div class="wrapper clearfix" ng-controller="Destinations">
+            
+            <ul class="clearfix mylist">
+                <li class="city" ng-repeat="city in cities | orderBy:'name'">
+                    <p>{{city.name}}</p>
+                    <b>({{city.count}})</b>
+                    <span class="cityinfo" ng-bind-html-unsafe="city.content"></span>
+                </li>
+            </ul>
+
+        </div>
+
+        <!--
+        My resume online:
+        https://docs.google.com/document/d/19ggv8r4V1YIq_cFzvEBOvWzAq60tb3W4XxNzFRWvpLU/edit?usp=sharing
+        -->
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/angular.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            $(function(){
+                $(".city").on(
+                    {
+                        click : function () {
+                            $(this).children(".cityinfo").show();
+                        },
+                        mouseleave : function () {
+                            $(this).children(".cityinfo").hide();
+                        }
+
+                    }
+                );
+            });
+            $(window).on('load', function(){
+                $('.mylist').easyListSplitter({
+                    colNumber: 3
+                });
+            });
+        </script>
+    </body>
+</html>

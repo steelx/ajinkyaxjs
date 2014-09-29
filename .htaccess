@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^ajinkyaxjs.com
+RewriteRule (.*) http://www.ajinkyaxjs.com/$1 [R=301,L]
