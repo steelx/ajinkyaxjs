@@ -1,11 +1,11 @@
 ---
 layout: blogpost
-title: "A wordpress killer on streets"
-description: "Jekyll is so easy to use you can create a Blog lighting fast."
+title: "Im getting MEAN"
+description: "First blog post, and here is my update on my favorite MEANstack"
 author: "Ajinkya"
 ---
 
-#A wordpress killer on streets
+#Im getting MEAN
 
 Jekyll is so easy to use you can create a Blog lighting fast. Jekyll is so easy to use you can create a Blog lighting fast.
 

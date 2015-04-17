@@ -67,9 +67,10 @@ rotator: true
             <div class="large-12">
               <h4>Blog Posts</h4>
               {% for blogpost in paginator.posts %}
-                <div class="homepost">
+                <div class="short-text homepost">
                   <h3><a href="{{blogpost.url}}">{{blogpost.title}}</a></h3>
                   <p>{{blogpost.description}}</p>
+                  <hr>
                 </div>
               {% endfor %}
 
