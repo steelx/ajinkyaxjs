@@ -1,15 +1,4 @@
 'use strict';
-//var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0Ate-jfPFLoagdEJNU1Zma1NLYVFIMW5KekNSZndMc1E&output=html';
-//
-//function init() {
-//    Tabletop.init( { key: public_spreadsheet_url,
-//        callback: function (data, tabletop) {
-//            console.log(data);
-//            MYDATA = data;
-//        },
-//        simpleSheet: true } );
-//}
-
 var app = angular.module('ajinkya', [], function($interpolateProvider) {
   //using interpolateProvider to overcome Jekyll syntax issue
   $interpolateProvider.startSymbol('[[');
