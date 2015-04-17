@@ -1,0 +1,47 @@
+<!doctype html>
+<html ng-app="ajinkya">
+<head>
+  <link rel="canonical" href="{{page.url | prepend: site.url}}" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta property="og:title" content="Ajinkya Borade" />
+
+    <meta property="og:site_name" content="ajinkyaxjs.com">
+    <meta property="og:url" content="http://www.ajinktyaxjs.com/" />
+
+    {% if page.description %}
+    <meta name="description" content="{{page.description}}">
+    <meta property="og:description" content="{{page.description}}">
+    {% else %}
+    <meta property="og:description" content="I am Front End Web Developer, from Mumbai. I love to code with HTML5, SASS, JavaScript and Im a fan of AngularJS and Node.js">
+    <meta name="description" content="Ajinkya frontend UI web designer and Javascript programmer.">
+    {% endif %}
+
+    <meta name="keywords" content="ajinkya, ajax, javascript, html5, css, css3, jQuery, angularjs, frontend ui, Mumbai, web developer, web designer in mumbai, nodejs, meanstack">
+
+    <link rel="author" href="http://plus.google.com/+AjinkyaBorade?rel=author"/>
+    <link rel="publisher" href="http://plus.google.com/+AjinkyaBorade?rel=publisher"/>
+
+    <meta name="msvalidate.01" content="60342796815E3AD88486B8684E5939F1" />
+    <meta name="google-site-verification" content="Gwn44hsNAICt6Hf2huIxmJGzLCdz_rT72BoSVUdk4f4" />
+
+    <title>{{page.title}}</title>
+
+
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="{{ site.url }}/js/vendor/custom.modernizr.js"></script>
+    <script src="{{ site.url }}/js/caption_hover_effect/modernizr.custom.js"></script>
+
+    {% if page.rotator %}
+    <!-- QUOTES ROTATOR -->
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/component.css" />
+    <script src="{{ site.url }}/js/modernizr.custom.js"></script>
+    <!-- end of QUOTES ROTATOR -->
+    {% else %}
+
+</head>
