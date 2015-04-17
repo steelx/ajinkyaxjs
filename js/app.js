@@ -10,7 +10,11 @@
 //        simpleSheet: true } );
 //}
 
-var app = angular.module('ajinkya', []);
+var app = angular.module('ajinkya', [], function($interpolateProvider) {
+  //using interpolateProvider to overcome Jekyll syntax issue
+  $interpolateProvider.startSymbol('[[');
+  $interpolateProvider.endSymbol(']]');
+});
 
 
 app.controller('Work', function ($scope, $http) {
@@ -77,4 +81,3 @@ app.controller('Hobby', function ($scope) {
         }
     ];
 });
-
