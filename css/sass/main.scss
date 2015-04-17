@@ -1,5 +1,6 @@
-@import "caption_hover_effect/default";
-@import "caption_hover_effect/component";
+// out: ../main.css
+@import "../caption_hover_effect/default";
+@import "../caption_hover_effect/component";
 *,
 *:before,
 *:after {
@@ -23,6 +24,7 @@ body {
 
 a:hover {
     cursor: pointer;}
+
 a:focus {
     outline: none; }
 
@@ -5187,7 +5189,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 /* ------------------------------ Blogposts ------------------------------ */
 
 //polaroid image effect
-.blogpostPage figure img {
+.blogpostPage img {
     background:#000; /*Change this to a background image or remove*/
     border:solid #fff;
     border-width:6px 6px 20px 6px;
