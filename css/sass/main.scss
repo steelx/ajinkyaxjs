@@ -23,7 +23,6 @@ body {
 
 a:hover {
     cursor: pointer;}
-
 a:focus {
     outline: none; }
 
@@ -5186,7 +5185,9 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 }
 
 /* ------------------------------ Blogposts ------------------------------ */
-.blogpostPage img.polaroid {
+
+//polaroid image effect
+.blogpostPage figure img {
     background:#000; /*Change this to a background image or remove*/
     border:solid #fff;
     border-width:6px 6px 20px 6px;
@@ -5196,6 +5197,8 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     height:200px; /*Set to height of your image or desired div*/
     width:200px; /*Set to width of your image or desired div*/
 }
+
+
 
 /* ------------------------------ EASY COLOR REPLACMENT ------------------------------ */
 
