@@ -65,13 +65,11 @@ rotator: true
         <div class="row">
 
             <div class="large-12">
+              <h4>Blog Posts</h4>
               {% for blogpost in paginator.posts %}
-                <div class="cbp-qtcontent homepost">
-                    <blockquote>
-                        <name>{{blogpost.title}}</name>
-                        <small><a href="{{blogpost.url}}" rel="nofollow">{{blogpost.url}}</a></small>
-                        <p>{{blogpost.description}}</p>
-                    </blockquote>
+                <div class="homepost">
+                  <h3><a href="{{blogpost.url}}">{{blogpost.title}}</a></h3>
+                  <p>{{blogpost.description}}</p>
                 </div>
               {% endfor %}
 
@@ -146,9 +144,9 @@ rotator: true
 
                     <div class="cbp-qtcontent" ng-repeat="item in hobbies">
                         <blockquote>
-                            <name>{{item.name}}</name>
-                            <small><a href="{{item.url}}" rel="nofollow">{{item.url}}</a></small>
-                            <p>{{item.text}}</p>
+                            <name>[[item.name]]</name>
+                            <small><a href="[[item.url]]" rel="nofollow">[[item.url]]</a></small>
+                            <p>[[item.text]]</p>
                         </blockquote>
                     </div>
 
@@ -171,11 +169,11 @@ rotator: true
 
                     <li ng-repeat="item in websites">
                         <figure>
-                            <div><a href="{{item.url}}" target="_blank" rel="nofollow"><img ng-src="{{item.imagesrc}}" alt="{{item.title}}"></a></div>
+                            <div><a href="[[item.url]]" target="_blank" rel="nofollow"><img ng-src="[[item.imagesrc]]" alt="[[item.title]]"></a></div>
                             <figcaption>
-                                <h3>{{item.title}}</h3>
-                                <p>{{item.description}}</p>
-                                <a href="{{item.url}}" target="_blank" rel="nofollow">{{item.url}}</a>
+                                <h3>[[item.title]]</h3>
+                                <p>[[item.description]]</p>
+                                <a href="[[item.url]]" target="_blank" rel="nofollow">[[item.url]]</a>
 
                             </figcaption>
                         </figure>
