@@ -7,18 +7,17 @@ author: "Ajinkya"
 
 #Im getting MEAN
 
-Jekyll is so easy to use you can create a Blog lighting fast. Jekyll is so easy to use you can create a Blog lighting fast.
+Today, I started updating my blog on ajinkyaxjs.com, previously I used to maintain ajwebdesigner.in
 
-  - Type some Markdown on the left
-  - See HTML in the right
-  - Magic
+![mean-800x540](https://cloud.githubusercontent.com/assets/3184210/7199959/3adf104e-e516-11e4-99de-163c44ca04bf.png)
+My all time favorite NodeJs, how can I stop myself from writing about it. Finally I could say I can create my own REST api using MEAN stack. I will be updating this post with my github source code soon.
+Below plugins I'm using to create my first ever MEAN project.
 
-Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site] [1]:
+  - Express
+  - Mongoose
+  - Morgan, body-parser
+  - AngularJs
 
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
+My aim here is create CRUD app for now, and upgrade it with some neat PassportJs authentication in coming days. Oh, did I tell you I just finished assembling my Raspberry Pi.
+
+![raspberry-pi_2](https://cloud.githubusercontent.com/assets/3184210/7199958/3a601be0-e516-11e4-8113-799b8c4bae3d.jpg)
