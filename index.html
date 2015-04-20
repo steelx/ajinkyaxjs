@@ -70,6 +70,7 @@ rotator: true
                 <div class="short-text homepost">
                   <h3><a href="{{blogpost.url}}">{{blogpost.title}}</a></h3>
                   <p>{{blogpost.description}}</p>
+                  <p class="post-meta">Posted by <a href="#">{{ blogpost.author }}</a> on {{ blogpost.date | date_to_string }}</p>
                   <hr>
                 </div>
               {% endfor %}
