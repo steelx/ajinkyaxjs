@@ -4368,25 +4368,6 @@ ul.pagination li {
   -webkit-border-radius: 0px;
   border-radius: 0px; }
 
-/* homeposts -- index */
-#blogposts h4 {
-  padding: 0 1em; }
-
-.homepost {
-  padding: 3.75em 1em 0; }
-
-.homepost h3 a {
-  font-size: 1.2em;
-  text-decoration: none;
-  color: #2ECC71; }
-
-.homepost p {
-  margin-bottom: 7px; }
-
-.homepost .post-meta {
-  font-size: 13px;
-  color: #C5D6EA; }
-
 /* Progress Bar */
 .progress {
   background-color: transparent;
@@ -5933,6 +5914,28 @@ a:hover {
 
 .bt-menu ul:first-of-type li a:hover, .bt-menu ul:first-of-type li a:focus, .bt-menu ul li a:hover:before, .bt-menu ul li a:focus:before {
   color: #1abc9c; }
+
+/* homeposts -- index */
+#blogposts {
+  padding-top: 0; }
+  #blogposts h4 {
+    padding: 0 1em; }
+
+.homepost {
+  padding: 1.75em 1em 0;
+  border-bottom: 1px solid #2C3E50; }
+
+.homepost h3 a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #2ECC71; }
+
+.homepost p {
+  margin-bottom: 7px; }
+
+.homepost .post-meta {
+  font-size: 13px;
+  color: #C5D6EA; }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width: 767px) {
