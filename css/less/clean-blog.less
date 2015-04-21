@@ -461,53 +461,16 @@ body {
 /*
 	Lightbox blog post
 */
-dialog {
+#overlay {
     position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin: auto;
-    border: solid;
-    padding: 1em;
-    background: white;
-    color: black;
-    display: none;
-    opacity: 0;
-    border: none;
-}
-dialog[open] {
-    display: block;
-}
-.backdrop {
-    position: fixed;
-    background-color: rgba(0,0,0,0.1);
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background:#000 url(../img/loader.gif) no-repeat scroll center center;
 }
-@keyframes fadeToNearBlack {
-  to { background: rgba(0,0,0,0.9); }
-}
-@keyframes goBig {
-  to { opacity: 1; }
-}
-
-dialog button {
-  border: none;
-  background: none;
-  font-size: 1.2rem;
-}
-dialog[open] {
-  animation: goBig 1s .4s forwards;
-  max-width: 700px;
-}
-dialog[open]::backdrop {
-  animation: fadeToNearBlack 1s forwards;
-}
-.backdrop {
-  animation: fadeToNearBlack 1s forwards;
-}
-dialog img {
-  width: 100%; height: auto;
+#lightbox {
+    position: fixed;
+    z-index: 999;
 }
