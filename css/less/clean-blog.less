@@ -1,16 +1,21 @@
+// out: ../clean-blog.css, compress:true
 @import "variables.less";
 @import "mixins.less";
 
 // Global Components
 
 body {
-	.serif;
+	.sans-serif;
 	font-size: 20px;
 	color: @gray-dark;
+	background-color: rgb(247, 247, 247);
 }
 
 // -- Typography
-
+body {
+	-webkit-tap-highlight-color: @brand-primary;
+	font-family: 'Open Sans';
+}
 p {
 	line-height: 1.5;
 	margin: 30px 0;
@@ -156,8 +161,8 @@ hr.small {
 // Header
 
 .intro-header {
-	background-color: @gray; 
-	background: no-repeat center center; 
+	background-color: @gray;
+	background: no-repeat center center;
 	background-attachment: scroll;
 	.background-cover;
 	// NOTE: Background images are set within the HTML using inline CSS!
@@ -208,7 +213,7 @@ hr.small {
 			font-weight: 600;
 		}
 		.meta {
-			.serif;
+			.sans-serif;
 			font-style: italic;
 			font-weight: 300;
 			font-size: 20px;
@@ -453,6 +458,24 @@ img::-moz-selection {
 	background: transparent;
 }
 
-body {
-	webkit-tap-highlight-color: @brand-primary;
+
+/*
+	Lightbox blog post
+*/
+@keyframes fadeToNearBlack{
+to { background: rgba(0,0,0,0.9); }
 }
+@keyframes goBig { to { opacity: 1; } }
+nav { display: flex; }
+nav a { display: block; flex: 1; }
+nav a img, dialog img { width: 100%; height: auto; }
+dialog { position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); border: none; opacity: 0; }
+dialog button { border: none; background: none; font-size: 1.2rem; }
+dialog[open] {
+animation: goBig 1s .4s forwards;
+width: 70%; margin: auto;
+max-width: 700px;
+}
+dialog[open]::backdrop { animation: fadeToNearBlack 1s forwards; }
+.backdrop { animation: fadeToNearBlack 1s forwards; }
+dialog img { width: 100%; height: auto; }
