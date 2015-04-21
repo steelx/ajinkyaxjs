@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Install Photoshop CS6 on Ubuntu"
-description: "First blog post, and here is my update on my favorite MEANstack"
+description: "Step by step guide on installing Photoshop CS6 on your Ubuntu OS"
 author: "Ajinkya"
 coverImg: "ubuntu-photoshop-cs6.jpg"
 ---
