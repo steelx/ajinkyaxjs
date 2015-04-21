@@ -5922,7 +5922,7 @@ a:hover {
     padding: 0 1em; }
 
 .homepost {
-  padding: 1.75em 1em 0;
+  padding: 1.75em 1em 0.9em;
   border-bottom: 1px solid #2C3E50; }
 
 .homepost h3 a {
