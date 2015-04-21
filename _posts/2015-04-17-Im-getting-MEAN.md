@@ -25,8 +25,3 @@ My aim here is create CRUD app for now, and upgrade it with some neat PassportJs
 
 
 <a class="lightbox" href="https://cloud.githubusercontent.com/assets/3184210/7199958/3a601be0-e516-11e4-8113-799b8c4bae3d.jpg"><img src="https://cloud.githubusercontent.com/assets/3184210/7246641/dafc751c-e81d-11e4-85d9-044b1a818a2c.jpg" alt="raspberry pi 2"></a>
-
-<dialog id="cover">
-		<img src="" alt>
-  		<button id="closecover">Close</button>
-</dialog>
