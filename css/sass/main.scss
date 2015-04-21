@@ -4177,8 +4177,9 @@ ul.pagination li {
     border-radius: 0px; }
 
 /* homeposts -- index */
+#blogposts h4 { padding: 0 1em;}
 .homepost {
-  padding-top: 15px;
+  padding: 3.75em 1em 0;
 }
 .homepost h3 a {
   font-size: 1.2em;
@@ -5154,25 +5155,9 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     color: #fff;
 }
 
-.scrollup:hover
-{
+.scrollup:hover{
     opacity: 1.0;
 }
-
-/* ------------------------------ Blogposts ------------------------------ */
-
-//polaroid image effect
-.blogpostPage img {
-    background:#000; /*Change this to a background image or remove*/
-    border:solid #fff;
-    border-width:6px 6px 20px 6px;
-    box-shadow:1px 1px 5px #333; /* Standard blur at 5px. Increase for more depth */
-    -webkit-box-shadow:1px 1px 5px #333;
-    -moz-box-shadow:1px 1px 5px #333;
-    height:200px; /*Set to height of your image or desired div*/
-    width:200px; /*Set to width of your image or desired div*/
-}
-
 
 
 /* ------------------------------ EASY COLOR REPLACMENT ------------------------------ */
