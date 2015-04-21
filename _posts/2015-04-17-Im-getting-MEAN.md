@@ -1,8 +1,9 @@
 ---
-layout: blogpost
+layout: single
 title: "Im getting MEAN"
 description: "First blog post, and here is my update on my favorite MEANstack"
 author: "Ajinkya"
+coverImg: "raspberry-pi.jpg"
 ---
 
 #Im getting MEAN
