@@ -18,38 +18,38 @@ I followed this guide and Im using Photoshop CS6 on my ubuntu 13.04
 Enter the following commands into a terminal (press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd>)
 
 
-##wine setup
+###wine setup
 ```html
 sudo add-apt-repository ppa:ubuntu-wine/ppa
 sudo apt-get update
 sudo apt-get install wine1.5
 ```
 
-##change wine prefix
+###change wine prefix
 ```html
 rm -rf .wine
 WINEARCH=win32 WINEPREFIX=~/.wine winecfg
 ```
 
-##get winetricks script
+###get winetricks script
 ```html
 wget http://kegel.com/wine/winetricks
 ```
 
-##setup dependencies
+###setup dependencies
 ```html
 sh winetricks -q atmlib gdiplus ie6 vcrun2005sp1 vcrun2008 fontsmooth-rgb	corefonts msxml3 msxml6 vcrun2010
 ```
 
-##copy dll’s from windows
-###Download DLL here : http://www.mediafire.com/?2zix528zkye5vky 	
+###copy dll’s from windows
+####Download DLL here : http://www.mediafire.com/?2zix528zkye5vky 	
 ```html
 cp ~/odbc32.dll ~/.wine/drive_c/windows/system32/
 cp ~/odbcint.dll ~/.wine/drive_c/windows/system32/
 ```
 
 ##photoshop setup
-###You can download Photoshop CS6 [here](https://kickass.to/adobe-photoshop-cs6-13-1-2-extended-repack-p2p-t7744263.html)
+####You can download Photoshop CS6 [here](https://kickass.to/adobe-photoshop-cs6-13-1-2-extended-repack-p2p-t7744263.html)
 
 ```html
 wine Setup.exe
