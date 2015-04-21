@@ -13,6 +13,7 @@ body {
 
 // -- Typography
 p {
+	.sans-serif;
 	line-height: 1.5;
 	margin: 30px 0;
 	a {
@@ -163,11 +164,13 @@ hr.small {
 	.background-cover;
 	// NOTE: Background images are set within the HTML using inline CSS!
 	margin-bottom: 50px;
+
 	.site-heading,
 	.post-heading,
 	.page-heading {
 		padding: 100px 0 50px;
 		color: white;
+
 		@media only screen and (min-width: 768px) {
 			padding: 150px 0;
 		}
@@ -176,16 +179,25 @@ hr.small {
 	.page-heading {
 		text-align: center;
 		h1 {
+			.sans-serif;
 			margin-top: 0;
 			font-size: 50px;
+			text-shadow: 3px 3px rgba(0,0,0,0.3);
 		}
 		.subheading {
 			font-size: 24px;
 			line-height: 1.1,
 			display: block;
+			text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
 			.sans-serif;
 			font-weight: 300;
 			margin: 10px 0 0;
+		}
+		.meta {
+			a {
+				color: #ff0052;
+				text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+			}
 		}
 		@media only screen and (min-width: 768px) {
 			h1 {
@@ -456,6 +468,10 @@ img::-moz-selection {
 body {
 	-webkit-tap-highlight-color: @brand-primary;
 	font-family: 'Open Sans';
+}
+a:link, a:active, a:hover, a:focus {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 /*
