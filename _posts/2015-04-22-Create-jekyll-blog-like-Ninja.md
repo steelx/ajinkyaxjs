@@ -25,3 +25,5 @@ Sick of dealing with hosting companies? We will learn how to use Github as our f
 
   Connect custom domain names to your website
   Search Engine Optimization for our Blog
+
+.
