@@ -6,7 +6,7 @@ author: "Ajinkya"
 coverImg: "jekyll-cover.png"
 ---
 
-#Install Photoshop CS6 on Ubuntu
+#Create a jekyll blog and host it on github like a ninja
 
 Learn to develope your own Blogging system, easier than Wordpress. And host it for free on Github. You can join the entire course videos [Click Here](https://www.udemy.com/create-free-jekyll-blog-on-github-pages-like-a-ninja/) and its all free.
 
