@@ -17,10 +17,13 @@ Everything is perfect about this book, except for some uncertain things not desc
 
 The 6th edition covers HTML5 and ECMAScript 5. Many chapters have been completely rewritten to bring them in line with today's best web development practices. New chapters in this edition document jQuery and server side JavaScript. It's recommended for experienced programmers who want to learn the programming language of the Web, and for current JavaScript programmers who want to master it.
 
+
 My rating 4 on 5 stars.
 
 What Professionals are saying:
+
   - "I made a career of what I learned from JavaScript: The Definitive Guide." -Andrew Hedges, Tapulous
+  
   - "A must-have reference for expert JavaScript programmers...well-organized and detailed." -Brendan Eich, creator of JavaScript, CTO of Mozilla
   
 So, if you are seriouse about getting into JavaScript, <a href="http://dl.flipkart.com/dl/javascript-definitive-guide-english-6th/p/itmdx922zhvghx2g?pid=9789350233948&affid=bestflipk">Buy JavaScript: The Definitive Guide </a>
