@@ -36,7 +36,6 @@ Lets add out html mark up in index.html and dont forget to add ng-app at html ta
 
 Initialize our base angularjs file app.js
 ```javascript
-
 var app = angular.module('ajApp', []);
 
 app.directive('chart', function(){
@@ -54,7 +53,6 @@ app.directive('datapoint', function(){
     template: '<circle cx="20" cy="20" r="4" stroke-width="3" fill="#ffffff" stroke="#5B90BF" />'
   };
 });
-
 ```
 
 And create your chart.html, dont worry I will take you through the code after this.
