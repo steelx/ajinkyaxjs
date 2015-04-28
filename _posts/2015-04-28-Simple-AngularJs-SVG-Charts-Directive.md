@@ -35,7 +35,7 @@ Lets add out html mark up in index.html and dont forget to add ng-app at html ta
 {% endhighlight %}
 
 Initialize our base angularjs file app.js
-{% highlight html %}
+{% highlight javascript %}
 var app = angular.module('ajApp', []);
 
 app.directive('chart', function(){
