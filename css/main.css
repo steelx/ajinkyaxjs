@@ -5940,7 +5940,7 @@ a:hover {
   .logo, .g-plusone {
     margin-left: 20%; }
   .g-plusone_wrap {
-    padding: 20px 0 5px; }
+    padding: 20px 0; }
   .countdown h1 {
     margin: 1%;
     text-align: center; } }
