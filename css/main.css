@@ -5922,20 +5922,18 @@ a:hover {
     padding: 0 1em; }
 
 .homepost {
-  padding: 1.75em 1em 0.9em;
+  padding: 1.4em 1em 0.9em;
   border-bottom: 1px solid #2C3E50; }
-
-.homepost h3 a {
-  font-size: 1.2em;
-  text-decoration: none;
-  color: #2ECC71; }
-
-.homepost p {
-  margin-bottom: 7px; }
-
-.homepost .post-meta {
-  font-size: 13px;
-  color: #C5D6EA; }
+  .homepost h3, .homepost a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #2ECC71; }
+  .homepost p {
+    margin-bottom: 7px;
+    font-size: 14px; }
+  .homepost .post-meta {
+    font-size: 12px;
+    color: #C5D6EA; }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width: 767px) {
