@@ -55,11 +55,40 @@ app.directive('datapoint', function(){
 });
 {% endhighlight %}
 
-And create your chart.html, dont worry I will take you through the code after this.
+And create your 'chart.html', dont worry I will take you through the code after this.
 {% highlight html %}
 <svg style="background: whitesmoke;">
   <g class="datapoints" ng-transclude ></g>
 </svg>
+{% endhighlight %}
+
+ # Inside ```app.directive('chart'), function(){```
+ - You can see ```restrict: 'E'``` it denotes we are creating a Directive - Element only (i.e. a new HTML tag)
+ - ```replace: true``` means we want to replace current html ELEMENT with our SVG element from Chart.html.
+ - ```transclude: true``` literal translation it means including of part, we are going to inject our 2nd directive using this, as well AngularJs 'transclude' gives us ability to pass data from html to javascript i.e. datapoints label and d values. Read more <a href="https://docs.angularjs.org/api/ng/directive/ngTransclude">here.</a>
+ - ```templateUrl: 'chart.html'``` will load our Chart directive html from external file.
+ 
+You will see now all SVG datapoints pilled up on each other since we have same x and y coordinates for all of them.
+
+
+Now, inside our 'datapoint' directive, we will dynamically take x and y coordinates from our html element, since we had set ```transclude: true ```
+I have updated the `template` value for datapoint directive. Also, now jump into LINK and Controller functions.
+We need to place datapoints with value ZERO at bottom of chart and 100 at top of chart. However, we will also need to equally distribute them accross our SVG Chart (base), since highest value can be also set to 1000 or 1 million we need to be prepared for any condition.
+
+{% highlight javascript %}
+app.directive('datapoint', function(){
+  return {
+    replace: true,
+    require: '^chart',
+    scope: {
+      d: '@'
+    },
+    template: '<circle ng-attr-cx="{{cx}}" ng-attr-cy="{{cy}}" ng-attr-r="{{radius}}" ng-attr-stroke-width="{{strokeWidth}}" fill="#ffffff" stroke="#5B90BF" />',
+    link: function(scope, element, attrs, ctrl){
+      //more code..
+    }
+  }
+});
 {% endhighlight %}
 
 draft..(this post is a draft)
