@@ -5568,6 +5568,9 @@ a:hover {
 
 .icons.js {
   background-position: 0 -64px; }
+.icons.ruby {
+  background: url('../img/rubygems32.png') no-repeat 0 0 transparent;
+}
 
 /*
     Menu ICONS
