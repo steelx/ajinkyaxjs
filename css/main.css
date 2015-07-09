@@ -5558,6 +5558,7 @@ a:hover {
   background-repeat: no-repeat;
   overflow: hidden;
   text-indent: -999px;
+  margin-right: 2px;
   float: left; }
 
 .icons.angular {
