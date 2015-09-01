@@ -4,3 +4,5 @@ paginate: 5
 
 gems:
  - jekyll-sitemap
+
+include: ['learn.io']
