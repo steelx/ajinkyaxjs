@@ -2147,7 +2147,7 @@ input {
   }
 
   .course-page .alum-goal .goal-text .goal-header {
-    display: inline-block;
+    display: block;
     text-align: left;
   }
 
