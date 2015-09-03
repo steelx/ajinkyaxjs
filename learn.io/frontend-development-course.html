@@ -1,8 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="ng-app:learnApp" id="ng-app" ng-app="learnApp" xmlns:ng="http://angularjs.org">
 <head>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <script>
+        document.createElement('ng-include');
+        document.createElement('ng-pluralize');
+        document.createElement('ng-view');
+        document.createElement('ng:include');
+        document.createElement('ng:pluralize');
+        document.createElement('ng:view');
+    </script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/json2/20150503/json2.min.js"></script>
+    <![endif]-->
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7COpen+Sans+Condensed:700" media="screen" rel="stylesheet"/>
 
     <title>Ajinkyaxjs | Online Coding Classes for Developers and Web Designers</title>
     <meta content='Intensive online coding classes in Web Development, HTML5, Frontend Web Development, JavaScript, AngularJs, and Web Design.' name='description'>
@@ -31,49 +47,23 @@
     <meta content='Intensive online coding classes in Web Development, HTML5, Frontend Web Development, JavaScript, AngularJs, and Web Design.' property='og:description'>
     <meta content='Ajinkyaxjs' property='og:site_name'>
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7COpen+Sans+Condensed:700" media="screen" rel="stylesheet"/>
     <link href="css/application.css" media="all" rel="stylesheet"/>
     <link href="css/frontend-course.css" media="all" rel="stylesheet"/>
 
     <a href="https://plus.google.com/107648012860845583983" rel="publisher"></a>
-
-
 </head>
 
 <body class='full-page-base-style'>
 
-<div class='course-page course-theme-red frontend'>
-    <div class='landing-navigation hidden-xs'>
-        <div class='container'>
-            <a id='top'></a>
-
-            <div class='logo'>
-                <div class='header-logo'><a href="http://www.ajinkyaxjs.com">AjinkyaxJs</a></div>
-            </div>
-
-            <div class='links pull-right'>
-                <a href='index.html'>Back</a>
-            </div>
-            <div class="googleplus pull-right">
-                <!-- Place this tag where you want the +1 button to render. -->
-                <div class="g-plusone" data-annotation="inline" data-width="300"></div>
-            </div>
-            <div class='clear'></div>
-        </div>
-    </div>
-    <div class='mobile-nav-container visible-xs'>
-        <div class='mobile-nav-header'>
-            <div class='bloc-main'>
-                <a href="http://www.ajinkyaxjs.com">Ajinkyaxjs</a>
-            </div>
-        </div>
-    </div>
+<div class='course-page course-theme-red frontend' id="top-header">
+    <div ng-include src="'partials/header.html'" include-replace></div>
 
 
-    <div class='landing-navigation course-nav sub-navigation hidden-xs' sticky_header>
+    <div class='landing-navigation course-nav sub-navigation hidden-xs' sticky-header="" data-offset='72'>
         <div class='container'>
             <div class='nav-title'>
-                <a du_smooth_scroll="true" href="#top" offset="30">Frontend Web
-                    Development</a>
+                <a du_smooth_scroll="true" href="#top" offset="30">Frontend Web Development</a>
             </div>
             <div class='links pull-left'>
                 <a du_scrollspy="true" du_smooth_scroll="true" href="#highlights"
@@ -2129,12 +2119,7 @@ L379.6,269.4"></path>
             </section>
             <section class='mentor-quote page-section page-section-contrast'>
                 <div class='mentor-image-desktop'>
-                    <img alt="Frontend"
-                         src="images/AJ_n.jpg"
-                         width="570px"/>
-                    <!--<img alt="Frontend"-->
-                         <!--src="https://cdn1.bloc.io/assets/landing/course_pages/mentor_quote/frontend-028f97f01f198e43a4c404bbb3cb372f.jpg"-->
-                         <!--width="570px"/>-->
+                    <img alt="Frontend" src="images/AJ_n.jpg" />
                 </div>
                 <div class='quote-body'>
                     <blockquote class='quote-box quote-box-white'>
@@ -2499,8 +2484,11 @@ L379.6,269.4"></path>
     </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/directives.js"></script>
+
 <script>
     $("#contact-form-0").Validate();
     $("#contact-form-1").Validate();

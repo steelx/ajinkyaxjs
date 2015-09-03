@@ -204,3 +204,5 @@
         return o;
     };
 })( jQuery, window, document );
+
+angular.module('learnApp', []);

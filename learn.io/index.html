@@ -1,6 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="ng-app:learnApp" id="ng-app" ng-app="learnApp" xmlns:ng="http://angularjs.org">
 <head>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <script>
+        document.createElement('ng-include');
+        document.createElement('ng-pluralize');
+        document.createElement('ng-view');
+        document.createElement('ng:include');
+        document.createElement('ng:pluralize');
+        document.createElement('ng:view');
+    </script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/json2/20150503/json2.min.js"></script>
+    <![endif]-->
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7COpen+Sans+Condensed:700" media="screen" rel="stylesheet"/>
 
@@ -41,29 +58,7 @@
 <body class='full-page-base-style'>
 
 <div class='landing-new'>
-    <div class='landing-navigation hidden-xs'>
-        <div class='container'>
-            <a id='top'></a>
-
-            <div class='logo'>
-                <div class='header-logo'><a href="http://www.ajinkyaxjs.com">AjinkyaxJs</a></div>
-            </div>
-
-            <div class="googleplus pull-right">
-                <!-- Place this tag where you want the +1 button to render. -->
-                <div class="g-plusone" data-annotation="inline" data-width="300"></div>
-            </div>
-            <div class='clear'></div>
-        </div>
-    </div>
-    <div class='mobile-nav-container visible-xs'>
-        <div class='mobile-nav-header'>
-            <div class='bloc-main'>
-                <a href="http://www.ajinkyaxjs.com">Ajinkyaxjs</a>
-            </div>
-        </div>
-    </div>
-
+    <div ng-include src="'partials/header.html'" include-replace></div>
 
     <div class='homepage-hero'>
         <div class='container'>
@@ -189,7 +184,8 @@
     </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
 <script src="js/main.js"></script>
 <!-- Place this tag in your head or just before your close body tag. -->
 <script src="https://apis.google.com/js/platform.js" async defer></script>

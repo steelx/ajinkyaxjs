@@ -1,36 +1,4 @@
-﻿/*** uncss> filename: https://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7COpen+Sans+Condensed:700 ***/
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Open Sans Condensed';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(https://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xJhsE6jcpsD2oq89kgohWx0.ttf) format('truetype');
-}
-
-/*** uncss> filename: http://localhost:8080/css/application.css ***/
-
-html {
+﻿html {
     -webkit-font-smoothing: antialiased;
 }
 
@@ -796,32 +764,16 @@ script {
     color: #cc3d3d;
 }
 
-@media (min-width: 320px)  and (max-width: 1024px) {
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    transition: all;
+}
 
-    .contact-box .input-txt {
-        width: 100%;
-        margin-left: 0px;
-        font-size: 16px;;
+
+@media (max-width: 480px){
+    .googleplus {
+        margin-top: 20px;
     }
-
-    .contact-box .formfields {
-        width: 100%;
-        margin-bottom: 14px;
-    }
-
-    .contact-box .first-name-field {
-        float: left;
-        width: 48%;
-    }
-
-    .contact-box .last-name-field {
-        float: right;
-        width: 48%;
-    }
-
-    .contact-box .submit {
-        margin: 10px 0px 30px 0px;
-    }
-
-
 }
