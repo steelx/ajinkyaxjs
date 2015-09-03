@@ -206,4 +206,8 @@
     };
 })( jQuery, window, document );
 
-angular.module('learnApp', []);
+angular.module('learnApp', [])
+    .run(function($rootScope, $location){
+
+        $rootScope.homepage = ($location.absUrl().indexOf('index.html') !== -1)? false : true;
+    });

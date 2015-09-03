@@ -1,7 +1,5 @@
 'use strict';
-
-(function(angular){
-angular.module('learnApp', [])
+angular.module('learnApp')
     .directive('stickyHeader', function(){
 
         return {
@@ -38,4 +36,3 @@ angular.module('learnApp', [])
             }
         };
     });
-})(window.angular);

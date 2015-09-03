@@ -61,21 +61,16 @@
 
 
     <div class='landing-navigation course-nav sub-navigation hidden-xs' sticky-header="" data-offset='72'>
-        <div class='container'>
+        <div class='container' ng-controller="ScrollController">
             <div class='nav-title'>
-                <a du_smooth_scroll="true" href="#top" offset="30">Frontend Web Development</a>
+                <a ng-click="gotoElement('top')">Frontend Web Development</a>
             </div>
             <div class='links pull-left'>
-                <a du_scrollspy="true" du_smooth_scroll="true" href="#highlights"
-                   offset="100">Highlights</a>
-                <a du_scrollspy="true" du_smooth_scroll="true" href="#learning"
-                   offset="250">Learning Online</a>
-                <a du_scrollspy="true" du_smooth_scroll="true" href="#summary"
-                   offset="100">Summary</a>
-                <a du_scrollspy="true" du_smooth_scroll="true" href="#outcomes"
-                   offset="100">Mentor</a>
-                <a du_scrollspy="true" du_smooth_scroll="true" href="#payment"
-                   offset="100">Payment</a>
+                <a ng-click="gotoElement('highlights')" >Highlights</a>
+                <a ng-click="gotoElement('learning')" >Learning Online</a>
+                <a ng-click="gotoElement('summary')" >Summary</a>
+                <a ng-click="gotoElement('outcomes')" >Mentor</a>
+                <a ng-click="gotoElement('payment')" >Payment</a>
             </div>
             <div class='pull-right'>
                 <a class="enroll-btn btn btn-orange" href="#contact-form-2">Contact Us</a>
@@ -351,12 +346,12 @@
                 <form class='form-container' novalidate id="contact-form-1">
                     <div class='contact-box cta-box forms3'>
                         <div class='cta-inner'>
-                            <h2 class='contact-box-header highlight-text'>Request a Syllabus</h2>
+                            <h2 class='contact-box-header highlight-text'>Get in touch with us</h2>
                             <img alt="Sa" height="74"
                                  src="images/AJ_n2.png"
                                  width="74"/>
 
-                            <p>Enter your email to receive the complete Frontend Web Development Course syllabus</p>
+                            <p>Enter your email to get in touch with us</p>
                             <input class='form-control' name='_replyto' errorMsg='Please enter a valid email address'
                                    placeholder='Email' required type='email'>
                             <input name="_gotcha" style="display:none"/>
@@ -2435,7 +2430,7 @@ L379.6,269.4"></path>
         </section>
         <section class='contact-advisor page-section' id='cta-final'>
             <h1 class='contact-header highlight-text'>
-                Enrollment
+                Get in touch with us
             </h1>
 
             <form class='form-container' novalidate id="contact-form-2">
@@ -2487,7 +2482,9 @@ L379.6,269.4"></path>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/controllers.js"></script>
 <script src="js/directives.js"></script>
+<script src="js/services.js"></script>
 
 <script>
     $("#contact-form-0").Validate();
