@@ -1,4 +1,5 @@
 //contact form
+//TODO: convert contact form validation to NG Directive
 ;(function ( $, window, document, undefined ) {
 
     $.Validate = function(el, options){
