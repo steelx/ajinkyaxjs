@@ -279,7 +279,6 @@ script {
 
 .full-page-footer .bottom {
     overflow: hidden;
-    border-top: 1px solid gray;
     margin-top: 20px;
     padding-top: 20px;
 }
@@ -779,3 +778,27 @@ script {
         margin-top: 20px;
     }
 }
+
+/*
+footer
+*/
+.icons {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url("http://www.ajinkyaxjs.com/img/html5.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    margin-right: 2px;
+    vertical-align: baseline;
+}
+
+.icons.angular {
+    background-position: 0 -32px; }
+
+.icons.html5 {
+    background-position: 0 0; }
+
+.icons.js {
+    background-position: 0 -64px; }
