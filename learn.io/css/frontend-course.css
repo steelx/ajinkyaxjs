@@ -1669,10 +1669,7 @@ input {
 }
 
 .course-page .get-in-touch {
-  margin: -125px auto 0;
-  -webkit-transform: translateY(170px);
-  -ms-transform: translateY(170px);
-  transform: translateY(170px);
+  margin: auto;
 }
 
 .course-page .get-in-touch input[type=email] {

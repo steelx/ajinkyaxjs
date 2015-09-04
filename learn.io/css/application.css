@@ -747,6 +747,8 @@ script {
     text-align: left;
     padding-top: 4px;
     text-indent: 10px;
+    max-width: 85%;
+    margin: 0 auto 10px;
 }
 
 .tooltip-error {

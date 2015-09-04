@@ -73,7 +73,7 @@
                 <a ng-click="gotoElement('payment')" >Payment</a>
             </div>
             <div class='pull-right'>
-                <a class="enroll-btn btn btn-orange" href="#contact-form-2">Contact Us</a>
+                <a class="enroll-btn btn btn-orange" ng-click="gotoElement('cta-final')">Contact Us</a>
             </div>
         </div>
         <div class='clear'></div>
@@ -341,29 +341,8 @@
                     </div>
                 </div>
             </div>
-            <div class='get-in-touch'>
+            <get-in-touchform></get-in-touchform>
 
-                <form class='form-container' novalidate id="contact-form-1">
-                    <div class='contact-box cta-box forms3'>
-                        <div class='cta-inner'>
-                            <h2 class='contact-box-header highlight-text'>Get in touch with us</h2>
-                            <img alt="Sa" height="74"
-                                 src="images/AJ_n2.png"
-                                 width="74"/>
-
-                            <p>Enter your email to get in touch with us</p>
-                            <input class='form-control' name='_replyto' errorMsg='Please enter a valid email address'
-                                   placeholder='Email' required type='email'>
-                            <input name="_gotcha" style="display:none"/>
-                        </div>
-                        <button class='btn cta-button' type='submit'>
-                            Send
-                            <i class='fa fa-refresh fa-spin'></i>
-                        </button>
-                    </div>
-                </form>
-
-            </div>
         </section>
 
         <div id='learning'>
@@ -2433,22 +2412,7 @@ L379.6,269.4"></path>
                 Get in touch with us
             </h1>
 
-            <form class='form-container' novalidate id="contact-form-2">
-                <div class='contact-box cta-box forms3'>
-                    <div class='cta-inner'>
-                        <h2 class='contact-box-header highlight-text'>Type in your email</h2>
-
-                        <p>Enter your email to get in touch with us for enrolling</p>
-                        <input class='form-control' name='_replyto' errorMsg='Please enter a valid email address'
-                               placeholder='Email' required type='email'>
-                        <input name="_gotcha" style="display:none"/>
-                    </div>
-                    <button class='btn cta-button' type='submit'>
-                        Get Details
-                        <i class='fa fa-refresh fa-spin'></i>
-                    </button>
-                </div>
-            </form>
+            <get-in-touchform></get-in-touchform>
 
         </section>
     </div>
@@ -2480,7 +2444,7 @@ L379.6,269.4"></path>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
 <script src="js/main.js"></script>
 <script src="js/controllers.js"></script>
 <script src="js/directives.js"></script>

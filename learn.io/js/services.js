@@ -1,8 +1,8 @@
 'use strict';
 angular.module('learnApp')
-    .service('anchorSmoothScroll', function(){
+    .service('anchorSmoothScroll', function () {
 
-        this.scrollTo = function(eID) {
+        this.scrollTo = function (eID) {
 
             // This scrolling function
             // is from http://www.itnewb.com/tutorial/Creating-the-Smooth-Scroll-Effect-with-JavaScript
@@ -11,7 +11,8 @@ angular.module('learnApp')
             var stopY = elmYPosition(eID);
             var distance = stopY > startY ? stopY - startY : startY - stopY;
             if (distance < 100) {
-                scrollTo(0, stopY); return;
+                scrollTo(0, stopY);
+                return;
             }
             var speed = Math.round(distance / 100);
             if (speed >= 20) speed = 20;
@@ -19,14 +20,19 @@ angular.module('learnApp')
             var leapY = stopY > startY ? startY + step : startY - step;
             var timer = 0;
             if (stopY > startY) {
-                for ( var i=startY; i<stopY; i+=step ) {
-                    setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
-                    leapY += step; if (leapY > stopY) leapY = stopY; timer++;
-                } return;
+                for (var i = startY; i < stopY; i += step) {
+                    setTimeout("window.scrollTo(0, " + leapY + ")", timer * speed);
+                    leapY += step;
+                    if (leapY > stopY) leapY = stopY;
+                    timer++;
+                }
+                return;
             }
-            for ( var i=startY; i>stopY; i-=step ) {
-                setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
-                leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
+            for (var i = startY; i > stopY; i -= step) {
+                setTimeout("window.scrollTo(0, " + leapY + ")", timer * speed);
+                leapY -= step;
+                if (leapY < stopY) leapY = stopY;
+                timer++;
             }
 
             function currentYPosition() {
@@ -47,7 +53,8 @@ angular.module('learnApp')
                 while (node.offsetParent && node.offsetParent != document.body) {
                     node = node.offsetParent;
                     y += node.offsetTop;
-                } return y;
+                }
+                return y;
             }
 
         };
