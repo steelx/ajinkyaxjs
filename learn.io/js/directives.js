@@ -51,7 +51,7 @@ angular.module('learnApp')
             link: function (scope, el, attrs) {
                 var initVariables = function(){
                     scope.$email = el.find("input[type='email']");
-                    //scope.$submitButton = el.find("[type='submit']");
+                    scope.$submitButton = el.find("[type='submit']");
                     scope.isFormValid = false;
                 };
 
@@ -65,9 +65,7 @@ angular.module('learnApp')
 
                 var emailValidation = function () {
                     //testing regular expression
-                    //var $emailField = el.find("input[type='email']");
                     var $emailField = scope.$email;
-                    console.log('e', $emailField, el);
                     var filter = /^[a-zA-Z0-9]+[a-zA-Z0-9_.-]+[a-zA-Z0-9_-]+@[a-zA-Z0-9]+[a-zA-Z0-9.-]+[a-zA-Z0-9]+.[a-z]{2,4}$/;
 
                     if(filter.test($emailField.val())){
