@@ -1,0 +1,21 @@
+<div style="width:100%;">
+    <div id="postcomments"></div>
+    <script>
+        $(function(){
+            window.setTimeout(function() {
+                var id = "postcomments";
+                var divWidth = document.getElementById(id).offsetWidth;
+                var width = !!divWidth ? Math.min(divWidth, 750) : 750;
+                var url = "{{page.url | prepend: site.baseurl}}";
+                var moderationMode = "FILTERED_POSTMOD";
+                gapi.comments.render(id, {
+                    "href": url,
+                    "first_party_property" : "BLOGGER",
+                    "view_type" : moderationMode,
+                    "width" : width
+                });
+            }, 100);
+        });
+    </script>
+
+</div>
