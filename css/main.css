@@ -5546,6 +5546,11 @@ a:hover {
 .g-plusone_wrap {
   padding: 44px 0 0;
   text-align: right; }
+@media (max-width: 480px) {
+  .g-plusone_wrap {
+    padding-left: 25%;
+  }
+}
 
 .newsletter p + ul {
   margin-bottom: 2px; }
