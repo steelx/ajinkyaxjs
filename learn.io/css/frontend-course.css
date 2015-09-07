@@ -2489,3 +2489,7 @@ tr:nth-child(even) td {
   background: white;
 }
 
+.fb-comments > span {
+  margin: 0 auto !important;
+  text-align: center !important;
+}
