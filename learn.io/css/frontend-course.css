@@ -2291,6 +2291,14 @@ input {
   transform: translate(-50%, -50%);
 }
 
+@media (max-width: 480px) {
+  .course-page .payment .payment-callout .price {
+    font-size: 20px;
+    line-height: 22px;
+    height: 90px;
+  }
+}
+
 .course-page .payment .payment-callout .media-element {
   margin-bottom: 20px;
 }
