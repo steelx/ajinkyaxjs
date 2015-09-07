@@ -1,19 +1,10 @@
-<div style="width:100%;">
-    <div id="postcomments"></div>
-    <script>
-        window.setTimeout(function() {
-            var id = "postcomments";
-            var divWidth = document.getElementById(id).offsetWidth;
-            var width = !!divWidth ? Math.min(divWidth, 750) : 750;
-            var url = "{{page.url | prepend: site.baseurl}}";
-            var moderationMode = "FILTERED_POSTMOD";
-            gapi.comments.render(id, {
-                "href": url,
-                "first_party_property" : "BLOGGER",
-                "view_type" : moderationMode,
-                "width" : width
-            });
-        }, 10);
-    </script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=245629822267100";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-</div>
+<div class="fb-comments" data-href="http://www.ajinkyaxjs.com/learn.io/frontend-development-course.html" data-numposts="5"></div>
