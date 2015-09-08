@@ -772,6 +772,9 @@ script {
     transition: all;
 }
 
+.googleplus {
+    min-width: 100px;
+}
 
 @media (max-width: 480px){
     .googleplus {
