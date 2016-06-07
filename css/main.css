@@ -155,6 +155,8 @@ a:hover, a:active {
 .grid figcaption h3 {
   margin: 0;
   padding: 0; }
+.grid figcaption p {
+  font-size:0.9em;}
 
 .grid figcaption a {
   text-align: center;
