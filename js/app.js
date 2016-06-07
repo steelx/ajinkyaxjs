@@ -9,10 +9,10 @@ var app = angular.module('ajinkya', [], function($interpolateProvider) {
 app.controller('Work', function ($scope, $http) {
     $scope.websites = [
         {
-            "title": "Letters to Santa",
-            "url": "http://www.letterstosanta.in",
-            "description": "I developed the comeplete frontend, enjoyed working on animations.",
-            "imagesrc": "http://i.imgur.com/DTCL6mZ.jpg"
+            "title": "Flock Admin App",
+            "url": "https://admin.flock.co",
+            "description": "I developed the comeplete MVC Web Application from scratch (Only the JavaScript part), enjoyed working on angularjs.",
+            "imagesrc": "http://i.imgur.com/sahOegu.jpg"
         },
         {
             "title": "Tata Nano",
