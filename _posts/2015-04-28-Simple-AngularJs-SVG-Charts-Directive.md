@@ -8,7 +8,7 @@ coverImg: "raspberry-pi.jpg"
 
 #Create simple Angularjs SVG Charts Directive
 
-I will show you Step by step code to create SVG Charts directive in AngularJs. This will be simple, also I will take your throught basics of AngularJs Directives
+I will show you Step by step code to create SVG Charts directive in AngularJs. This will be simple, also I will take your through basics of AngularJs Directives
 
   - Directive Markup
   - Template
@@ -33,6 +33,10 @@ Lets add out html mark up in index.html and dont forget to add ng-app at html ta
   <datapoint label="2008" d="30"></datapoint>
 </chart>
 {% endhighlight %}
+
+Please Note: In above code you can see `chart` directive is wrapping `datapoint` directive. Because we are going to use `transclude: true`.
+
+
 
 Initialize our base angularjs file app.js
 {% highlight javascript %}
@@ -68,7 +72,7 @@ And create your 'chart.html', dont worry I will take you through the code after 
   - ```transclude: true``` literal translation it means including of part. We are going to inject our 2nd directive using this, we will pass datapoints inside Chart.html ```<g ng-transclude>``` element.  Read more <a href="https://docs.angularjs.org/api/ng/directive/ngTransclude">here.</a>
   - ```templateUrl: 'chart.html'``` will load our Chart directive html from external file.
  
-You will see now all SVG datapoints pilled up on each other since we have same x and y coordinates for all of them.
+You will see now all SVG datapoints piled up on each other since we have same x and y coordinates for all of them.
 
 
 Now, inside our 'datapoint' directive, we will dynamically take x and y coordinates from our html element, since we had set ```transclude: true ```
