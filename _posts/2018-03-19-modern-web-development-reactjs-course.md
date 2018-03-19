@@ -6,11 +6,11 @@ author: "Ajinkya"
 coverImg: "js-books.jpg"
 ---
 
-#Modern Web Development Course with React JS
+<h2>Modern Web Development Course with React JS</h2>
 
 ![udemy-logo-2](https://user-images.githubusercontent.com/3184210/37596782-48b41bac-2ba3-11e8-9d01-fe3e4f568f0e.png)
 
-What Will you Learn?
+<strong>What Will you Learn?</strong>
  - Create HTML5 Website
  - Learn React JS
  - You will be JOB READY for Frontend Web Development
@@ -27,18 +27,20 @@ You can run any section as per your choice, no need to go in sequence.
 This is not an ordinary course, its a Modern Front End Web Development course. Jumping into actual practical problems will give you an accelerated confidence at your workplace.
 
 
-###Key Features:
+<h4>Key Features:</h4>
  - Marking Webpage using HTML/CSS
  - Converting Marking website into a React Application
  - Learn JavaScript Basics
  - Learn core React basics
 
 
-###Who is the target audience?
+<h4>Who is the target audience?</h4>
  - Anyone who wants to "Learn to Code"
  - Jump into Web Development Career
  - Beginners who are interested in "Learning React JS"
 
-<a href="https://www.udemy.com/modern-frontend-web-development-with-reactjs/">JOIN NOW !!</a>
+<h3>
+<a href="https://www.udemy.com/modern-frontend-web-development-with-reactjs/">JOIN NOW !!</a> ;)
+</h3>
 
 First 5 to comment here will ger 50% OFF Discount coupons. 
