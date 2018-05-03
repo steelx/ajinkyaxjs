@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Functional Programming with JavaScript (ES6)"
+title: "Functional Programming Cheatsheet JavaScript (ES6)"
 description: "Simple ES6 cheatsheet for functional programming"
 author: "Ajinkya"
 coverImg: "es6-recursion.png"
