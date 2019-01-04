@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="canonical" href="{{page.url | prepend: relative_url}}" />
+    <link rel="canonical" href="{{page.url | prepend: site.baseurl}}" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,17 +16,17 @@
 
     <meta property="og:site_name" content="Ajinkya.js.org">
     <meta property="fb:app_id" content="245629822267100" />
-    <meta property="og:url" content="{{page.url | prepend: relative_url}}" />
+    <meta property="og:url" content="{{page.url | prepend: site.baseurl}}" />
     <meta property="og:type" content="website" >
 
     <title>{{page.title}}</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{ site.url }}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="{{ site.url }}/css/clean-blog.css" rel="stylesheet">
-    <link href="{{ site.url }}/css/codehighlight.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/css/clean-blog.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/css/codehighlight.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
