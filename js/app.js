@@ -9,40 +9,40 @@ var app = angular.module('ajinkya', [], function($interpolateProvider) {
 app.controller('Work', function ($scope, $http) {
     $scope.websites = [
         {
-            "title": "Flock Admin App",
-            "url": "https://admin.flock.co",
+            "title": "Flock Admin Panel",
+            "url": "https://admin.flock.com",
             "description": "I developed the comeplete MVC Web Application from scratch (Only the JavaScript part), enjoyed working on angularjs.",
-            "imagesrc": "http://i.imgur.com/sahOegu.jpg"
+            "imagesrc": "https://i.imgur.com/sahOegu.jpg"
         },
         {
             "title": "Tata Nano",
             "url": "http://www.tatanano.com",
             "description": "I developed the comeplete frontend, using HTML, CSS and jquery.",
-            "imagesrc": "http://i.imgur.com/kQD4jLQ.jpg"
+            "imagesrc": "https://i.imgur.com/kQD4jLQ.jpg"
         },
         {
             "title": "Bramha Corp",
             "url": "http://www.bramhacorp.in/",
             "description": "Bramha Builder wanted interactive flash based website, but I buld the whole website in jquery, css to achive the desired interactivity.",
-            "imagesrc": "http://i.imgur.com/aUiUxak.jpg"
+            "imagesrc": "https://i.imgur.com/aUiUxak.jpg"
         },
         {
             "title": "Valueabled",
             "url": "http://www.valueabled.com/",
             "description": "Its a portal based website. I developed start to end frontend using HTML, CSS and jQuery.",
-            "imagesrc": "http://i.imgur.com/dqsqcTM.jpg"
+            "imagesrc": "https://i.imgur.com/dqsqcTM.jpg"
         },
         {
             "title": "MTS Discover",
             "url": "http://www.mtsdiscover.com/",
             "description": "MTS wanted a rockband portal. I developed complete frontend, website was not thought out with mobile first approach.",
-            "imagesrc": "http://i.imgur.com/6YaCF60.jpg"
+            "imagesrc": "https://i.imgur.com/6YaCF60.jpg"
         },
         {
             "title": "Nano Art in Motion",
             "url": "http://www.tatanano.com/nanoartinmotion/",
             "description": "TATA Nano Art-in-motion full interactive website, i developed using HTML5, CSS and jQuery.",
-            "imagesrc": "http://i.imgur.com/iLBhaCu.jpg"
+            "imagesrc": "https://i.imgur.com/iLBhaCu.jpg"
         }
     ];
 });
@@ -51,9 +51,9 @@ app.controller('Work', function ($scope, $http) {
 app.controller('Hobby', function ($scope) {
     $scope.hobbies = [
         {
-            name: "Ruby on Rails",
-            url: "http://rubyonrails.org/",
-            text: "Ruby language has amazed me everytime. Its been on my learning wishlist. I still try to read it, and I wish to create my own Ruby on Rails APP."
+            name: "GoLang",
+            url: "http://golang.org/",
+            text: "GO programing language is just beautiful combinations of C, Python and Javascript. In future I would definitely work on GoLang projects."
         },
         {
             name: "Biking",
