@@ -1,4 +1,4 @@
-baseurl: "/"
+baseurl: "https://ajinkya.js.org/"
 markdown: redcarpet
 paginate: 5
 
