@@ -1,7 +1,7 @@
 <!doctype html>
 <html ng-app="ajinkya">
 <head>
-  <link rel="canonical" href="{{page.url | prepend: site.url | replace:'index.html' }}" />
+  <link rel="canonical" href="{{page.url | prepend: site.baseurl | replace:'index.html' }}" />
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -11,7 +11,7 @@
 
     <meta property="og:site_name" content="Ajinkya.js.org">
     <meta property="fb:app_id" content="245629822267100" />
-    <meta property="og:url" content="{{page.url | prepend: relative_url}}" />
+    <meta property="og:url" content="{{page.url | prepend: site.baseurl}}" />
     <meta property="og:type" content="website" >
 
     {% if page.description %}
@@ -34,14 +34,14 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico" />
 
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/main.css">
-    <script src="{{ site.baseurl }}/js/vendor/custom.modernizr.js"></script>
-    <script src="{{ site.baseurl }}/js/caption_hover_effect/modernizr.custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}css/main.css">
+    <script src="{{ site.baseurl }}js/vendor/custom.modernizr.js"></script>
+    <script src="{{ site.baseurl }}js/caption_hover_effect/modernizr.custom.js"></script>
 
     {% if page.rotator %}
     <!-- QUOTES ROTATOR -->
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/component.css" />
-    <script src="{{ site.baseurl }}/js/modernizr.custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}css/component.css" />
+    <script src="{{ site.baseurl }}js/modernizr.custom.js"></script>
     <!-- end of QUOTES ROTATOR -->
     {% endif %}
 

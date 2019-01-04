@@ -11,7 +11,7 @@
     <meta name="author" content="{{page.author}}">
     {% endif %}
     {% if page.coverImg %}
-    <meta property="og:image" content="{{page.coverImg | prepend: site.url}}" />
+    <meta property="og:image" content="{{page.coverImg | prepend: site.baseurl}}" />
     {% endif %}
 
     <meta property="og:site_name" content="Ajinkya.js.org">
@@ -22,11 +22,11 @@
     <title>{{page.title}}</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="{{ site.baseurl }}/css/clean-blog.css" rel="stylesheet">
-    <link href="{{ site.baseurl }}/css/codehighlight.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}css/clean-blog.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}css/codehighlight.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
